@@ -21,7 +21,7 @@ Hi folks, Welcome to FEPIR 2. This repository contains information, HW,  Assignm
 
 ### Course Information
 
-- Course duration: Sunday, Dec 6th, 2020 - Thursday, Jan 14th, 2021
+- Course duration: Sunday, Mar 14th, 2021 - Thursday, Apr 22nd, 2021
 - Class schedule: Sunday - Thursday : 9am - 5pm
 
 <br>
