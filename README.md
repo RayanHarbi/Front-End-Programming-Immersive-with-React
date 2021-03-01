@@ -45,8 +45,6 @@ Asr   break | 3:30pm - 3:50pm   | 20 - Minutes
 - Lunch break is fixed
 - There may be small breaks in between
 
---------
-
 ## What We Expect From You
 ### Graduation Requirements
 * Complete and submit 80% of homework assignments.
@@ -59,8 +57,6 @@ Asr   break | 3:30pm - 3:50pm   | 20 - Minutes
 * Ask questions.
 * Be supportive.
 * Talk to us!
-
---------
 
 ## Curriculum Overview
 
