@@ -7,7 +7,7 @@
 Hi folks, Welcome to FEPIR 2. This repository contains information, HW,  Assignments, Projects and Materials specific to your course.
 
 # Important links 
-- [Class Slack]()
+- [Class Slack](https://app.slack.com/client/T0351JZQ0/G01P6G2GLDD)
 - [Zoom Classroom]()
 - [Exit Ticket]() (complete at the end of Thursday class each week)
 
