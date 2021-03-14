@@ -120,3 +120,8 @@ Curriculum schedule is subject to change at instructor's discretion.
 * The capstone project is done at the last week and is mandatory
 * The other projects number, time and duration may change
 
+## Materials
+
+| Week | Day  | Lesson | Lab | Lesson| Lab | Homework|  Recording
+|------| ---- | ------ | ------ | -------| -----|-------|---------|
+| 1    | 1    |    [HTML intro](week1/day1/2-Create-HTML-documents-using-common.pdf)    |     [LAB - HTML](https://git.generalassemb.ly/FEPIR-LOL-Saudi/lab_week_1_day_1_html)    |  [Semantic HTML + Basic CSS](https://git.generalassemb.ly/FEPIR-LOL-Saudi/week1_day1_csspositioning)    | [LAB - HTML + CSS](https://git.generalassemb.ly/FEPIR-LOL-Saudi/lab_week_1_day_1_html_css)  | [HW day 1](week1/day1/homework) | -- |
