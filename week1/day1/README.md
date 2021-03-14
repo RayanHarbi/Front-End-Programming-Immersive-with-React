@@ -4,8 +4,8 @@
 
 ### Lecture:
 
-- [HTML](https://git.generalassemb.ly/FEPIR-LOL-Saudi/Front-End-Programming-Immersive-with-React/blob/main/week1/day1/2-Create-HTML-documents-using-common.pdf)
-- [Semantic HTML + CSS intro](https://git.generalassemb.ly/FEPIR-LOL-Saudi/Front-End-Programming-Immersive-with-React/blob/main/week1/day1/3-Semantic-HTML-and-basic-CSS.pdf)
+- [HTML + CSS intro](https://git.generalassemb.ly/FEPIR-LOL-Saudi/week1_day1_html_css)
+- [CSS positioning intro](https://git.generalassemb.ly/FEPIR-LOL-Saudi/week1_day1_csspositioning)
 
 ### Slides:
 
