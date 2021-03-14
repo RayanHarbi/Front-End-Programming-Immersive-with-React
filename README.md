@@ -8,7 +8,7 @@ Hi folks, Welcome to FEPIR 2. This repository contains information, HW,  Assignm
 
 # Important links 
 - [Class Slack](https://app.slack.com/client/T0351JZQ0/G01P6G2GLDD)
-- [Zoom Classroom]()
+- [Zoom Classroom](https://generalassembly.zoom.us/j/94092450267?pwd=YmFQdHFqMnBPVFJ2ei9vcXE0R2tOdz09)
 - [Exit Ticket]() (complete at the end of Thursday class each week)
 
 ## Instructional Team
