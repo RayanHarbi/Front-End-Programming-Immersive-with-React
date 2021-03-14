@@ -124,4 +124,4 @@ Curriculum schedule is subject to change at instructor's discretion.
 
 | Week | Day  | Lesson | Lab | Lesson| Lab | Homework|  Recording
 |------| ---- | ------ | ------ | -------| -----|-------|---------|
-| 1    | 1    |    [HTML intro](week1/day1)    |     [LAB - HTML](https://git.generalassemb.ly/FEPIR-LOL-Saudi/lab_week_1_day_1_html)    |  [Semantic HTML + Basic CSS](https://git.generalassemb.ly/FEPIR-LOL-Saudi/week1_day1_csspositioning)    | [LAB - HTML + CSS](https://git.generalassemb.ly/FEPIR-LOL-Saudi/lab_week_1_day_1_html_css)  | [HW day 1](week1/day1/homework) | -- |
+| 1    | 1    |    [HTML intro](week1/day1)    |     [LAB - HTML](https://git.generalassemb.ly/FEPIR-LOL-Saudi/lab_week_1_day_1_html)    |  [Semantic HTML + Basic CSS](https://git.generalassemb.ly/FEPIR-LOL-Saudi/week1_day1_csspositioning)    | [LAB - HTML + CSS](https://git.generalassemb.ly/FEPIR-LOL-Saudi/lab_week_1_day_1_html_css)  | [HW day 1](week1/day1/homework) | [Recording w01d01](https://generalassembly.zoom.us/rec/share/ebCq26kDRaMLmMNscSEfcbGg4_1qrrMd0OupsJ2WGFabcq6hpiUk_0gjf9XUhKlJ.RlmksvaOyKvhX7Au) passcode: kNKh&0Sb |
