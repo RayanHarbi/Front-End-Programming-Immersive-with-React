@@ -1,17 +1,5 @@
 # Week 1 Day 2:
 
-## Flexbox
-
-### Lecture:
-
-* [Flexbox](Flexbox.pdf)
-
-### Slides:
-
-* [Flexbox](https://git.generalassemb.ly/FEPIR-LOL-Saudi/Front-End-Programming-Immersive-with-React/blob/master/extra-resources/slides/04%20Flexbox%20-%20FEWD%203.1.pptx.pdf)
-
-* [Grid](https://git.generalassemb.ly/FEPIR-LOL-Saudi/Front-End-Programming-Immersive-with-React/blob/master/extra-resources/slides/05%20CSS%20Grid%20-%20FEWD%203.1.pptx.pdf)
-
 ## Git and Github:
 
 * [Command Line](command-line)
