@@ -2,8 +2,6 @@
 
 ## Git and Github:
 
-* [Command Line](command-line)
-
 * [Git & GitHub](git_github)
 
 * [Homework Submission](homework_submission)
