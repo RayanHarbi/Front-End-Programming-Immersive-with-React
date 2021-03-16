@@ -3,13 +3,16 @@
 <link  rel="stylesheet"  href="site.css">
 </head>
 <body>
+<style>
+label{color:blue;}
+</style>
 <h1>contactus </h1>
-<form action="">
-Name: 
-<input type="text" > 
+<form action="http://www.303030.org/fepir/recive.php" method="post">
+<label >Name: </label>
+<input type="text" name="name" > 
 <br><br>
-Age : 
-<input type="number" >
+<label>Age :</label>
+<input type="number" name="age" >
 <br><br>
 gender : 
 <input type="radio" name="gender" id="r1"> <label for="r1"> male</label>
@@ -35,6 +38,13 @@ Email:
 <br><br>
 Your Cv :
 <input type="file" >
+<br><br>
+<input type="submit" > 
+<br><br>
+<button>Cancel</button> 
+<button>reset</button>
+<br><br>
+
 </form>
 
 
