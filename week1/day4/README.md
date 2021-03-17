@@ -21,3 +21,4 @@
 ### Homework:
 
 - [JS functions + conditionals](https://git.generalassemb.ly/FEPIR-LOL-Saudi/homework_week1_day_4_js_functions)
+- [flexbox](https://git.generalassemb.ly/FEPIR-LOL-Saudi/homework_week1_day4_flexbox)
