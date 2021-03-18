@@ -11,7 +11,7 @@
 ### JS Loops:
 
 - [Lesson](JS_loops)
-- [LAB](JS_loops_LAB)
+- [LAB](JS_loops_LAB.md)
 
 ### Point of Sale LAB:
 - [POS Lab](lesson1)
