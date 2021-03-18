@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day5</title>
+</head>
+<body>
+<button id="good"> Good Morning </button>
+<script>
+document.querySelector('#good')
+.addEventListener("click",function(){
+console.log("Good Morning");
+});
+</script>
+<br> <br>    
+<button id="sayhello" >Say Hello</button>
+<hr>    
+<div id="div10" style="width:150px;height:150px;background-color: rgb(73, 224, 149);"></div>
+
+<script>
+const  sayhello  =   document.querySelector('#sayhello');  
+sayhello.addEventListener("click",function(){
+    alert("Hello")
+});
+
+const div10 =   document.querySelector('#div10');
+div10.addEventListener("mouseover",function(){
+    div10.style.backgroundColor = 'red';
+});
+
+div10.addEventListener("mouseout",function(){
+    div10.style.backgroundColor = 'blue';
+});
+</script>
+
+<hr>
+
+    <spa id="message"></spa>
+<br><br>
+<button onclick="
+document.querySelector('#message').innerText 
++='\nHello'
+
+" >Say Hello</button>
+
+<hr>    
+    <style>
+        .msg{color: aquamarine;}
+    </style>
+<spa id="message"></spa>
+<br><br>
+<button onclick="
+document.querySelector('#message').innerHTML 
++='<div class=\'msg\'><br>Hello</div>'
+
+" >Say Hello</button>
+<hr><hr>
+<div id="div7" class="item"
+style="width:150px;height:150px;background-color: rgb(46, 17, 143);"
+onmouseover="document.querySelector('.item').style.backgroundColor='red'"
+onmouseout="document.querySelector('.item').style.backgroundColor='#eded33'"
+></div>
+
+<hr>    
+
+    <div id="div6" class="item"
+    style="width:150px;height:150px;background-color: rgb(46, 17, 143);"
+    onmouseover="document.querySelector('#div6').style.backgroundColor='red'"
+    onmouseout="document.querySelector('#div6').style.backgroundColor='blue'"
+    ></div>
+
+<br>    
+<div id="div5" 
+style="width:150px;height:150px;background-color: rgb(46, 17, 143);"
+onmouseover="document.getElementById('div5').style.backgroundColor='green'"
+onmouseout="document.getElementById('div5').style.backgroundColor='blue'"
+></div>
+  
+
+<hr>
+<div id="div4" style="width:150px;height:150px;background-color: rgb(46, 17, 143);"></div>
+    <br><br>  
+    <button onclick="
+    document.getElementById('div4').style.visibility  ='hidden';
+    ">invisible</button>
+<button onclick="
+document.getElementById('div4').style.visibility  ='visible';
+">visible</button>          
+
+<hr>
+
+<div id="div3" style="width:150px;height:150px;background-color: rgb(46, 17, 143);"></div>
+    <br><br>  
+    <button onclick="
+    document.getElementById('div3').style.display ='none';
+    ">Hide</button>
+<button onclick="
+document.getElementById('div3').style.display ='block';
+">show</button>          
+
+<hr>    
+<div id="div2" style="width:150px;height:150px;background-color: aquamarine;"></div>
+<br><br>  
+<button onclick="
+document.getElementById('div2').style ='width:150px;height:150px;background-color:#deffed';
+">Change color</button>
+
+<hr>    
+ <div id="div1">Your Message Here </div> 
+ <br><br>  
+<input type="button" 
+onclick="
+document.getElementById('div1').innerHTML 
++='<div style=\'color:red\'><br>Hello</div>'
+" 
+value='Say Hello'>
+
+</body>
+</html>
