@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+  .item{width:150px;
+  height: 150px;
+  background-color: bisque;
+  margin: 10px;
+  text-align: center;
+  color:cadetblue
+  }  
+  .basketitem{}
+  .price{}
+</style>
+
+
+<div style="float:right;width:80%">
+    <div   style="display: flex;flex-flow: wrap;">
+    <div data-price="25" class="item">Rice</div>
+    <div data-price="7" class="item">milk</div>
+    <div data-price="2" class="item">yegot</div>
+    <div data-price="58" class="item">Apple</div>
+    <div data-price="60" class="item">Tv</div>
+    <div data-price="10" class="item">Smart watch</div>
+    <div data-price="20" class="item">Keyboard</div>
+    <div data-price="7" class="item">Mouse</div>
+    <div data-price="14" class="item">Orange</div>
+    <div data-price="12.5" class="item">Appricot</div>
+    <div data-price="14.7" class="item">Panana</div>
+    <div data-price="3.5" class="item">Cheese</div>
+    <div data-price="4.5" class="item">Jam</div>
+    <div data-price="11" class="item">Glaxy</div>
+    <div data-price="13" class="item">Fluret</div>
+    </div>
+</div>
+<div   style="float:right;width:15%;background-color: chocolate;">
+<div>Item  Price </div>
+<div id="basket"></div>
+<div id="totalprice">000</div>
+</div>
+
+<script>
+  const elements =  document.querySelectorAll(".item");
+
+  elements.forEach(element => {
+    element.addEventListener("click",function(){
+        document.getElementById('basket').innerHTML 
+        += "<div class='basketitem'>" 
+            +  element.innerText 
+            + "<span class='price'>" + element.dataset.price + "<span>" 
+            + "</div>";
+            Toatl();
+    });  
+  }); 
+function Toatl(){
+  const allprices =  document.querySelectorAll(".price");
+
+}
+</script>
+
+</body>
+</html>
