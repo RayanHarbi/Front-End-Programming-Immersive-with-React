@@ -1,0 +1,13 @@
+# Week 2 Day 1:
+
+### Lectures:
+
+- [JS Objects](JS_objects.md)
+
+### Lab:
+
+- [JS objects lab](https://git.generalassemb.ly/FEPIR-LOL-Saudi/lab_w02_d01_objects)
+
+### Homework:
+
+- [JS Objects Homework](https://git.generalassemb.ly/FEPIR-LOL-Saudi/homework_week2_day1_objects)
