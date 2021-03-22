@@ -4,10 +4,8 @@
 
 - [Bootstrap Documentation](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 
+* [Command Line](command-line)
+
 * [JS Callback & Scope](JS_callback-scope)
 
 * [Modern JavaScript](Modern-JS)
-
-### Lab Solutions:
-
-* [Lab Solutions JS](Modern-JS/labDay1.js)
