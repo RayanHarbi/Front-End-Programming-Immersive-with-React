@@ -7,7 +7,3 @@
 * [JS Callback & Scope](JS_callback-scope)
 
 * [Modern JavaScript](Modern-JS)
-
-### Lab Solutions:
-
-* [Lab Solutions JS](Modern-JS/labDay1.js)
