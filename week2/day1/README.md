@@ -2,9 +2,13 @@
 
 ### Lectures:
 
+- [Bootstrap Documentation](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+
 - [JS Objects](JS_objects.md)
 
 ### Lab:
+
+- [JS Objects runs example](objects)
 
 - [JS objects lab](https://git.generalassemb.ly/FEPIR-LOL-Saudi/lab_w02_d01_objects)
 
