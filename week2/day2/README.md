@@ -1,4 +1,4 @@
-# Week 2 Day 2:
+# Week 2 Day 2: Command Line & Git & Scope & Arrow Functions
 
 ### Lectures:
 
@@ -9,3 +9,13 @@
 * [JS Callback & Scope](JS_callback-scope)
 
 * [Modern JavaScript](Modern-JS)
+
+### scope LAB:
+
+- [Scope Lab](scope)
+
+### Extra:
+
+* [Git](Git.md)
+
+* [Git Cheatsheet](https://git.generalassemb.ly/APII-LOL-Saudi/Application-Programming-Immersive/blob/main/week2/day2/git_command_cheatsheet_github.pdf)
