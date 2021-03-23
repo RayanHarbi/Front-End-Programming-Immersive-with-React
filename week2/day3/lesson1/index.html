@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <style>
+        #invoice{
+            overflow-y: auto;
+            height: 70vh;
+        }
+        .itemprice{float: right;
+        color: red;
+        }
+        .item{
+            background-color: #ffedee;
+            margin: 20px;
+            height: 150px;
+            width: 150px;
+            border-radius: 5px;
+            font-size: 1.3em;
+            }
+            #invoice{font-size: 1.3em;}
+    </style>
+<div class="container-fluid bg-light">  
+
+    <div class="row">
+    <div class="col-md-9">
+        <div class="row">
+        <div  class="col-md-3 text-center  " >
+            <div class="p-2 item" data-price="55"
+            style="color: #fff;
+            background-size: contain;
+            background-image: url(2.jpg);"
+            >product
+
+        </div></div>
+        <div class="col-md-3 text-center  "><div data-price="1.2" class="p-2 item">Panana</div></div>
+        <div class="col-md-3 text-center  "><div data-price="1.5" class="p-2 item">Orange </div></div>
+        <div class="col-md-3 text-center  "><div data-price="6" class="p-2 item">Cheese</div></div>
+        <div class="col-md-3 text-center  "><div data-price="8" class="p-2 item">Coffie</div></div>
+        <div class="col-md-3 text-center  "><div data-price="18" class="p-2 item">Tea</div></div>
+        <div class="col-md-3 text-center  "><div data-price="80" class="p-2 item">Apple</div></div>
+        <div class="col-md-3 text-center  "><div data-price="7.5" class="p-2 item">Samasung</div></div>
+        <div class="col-md-3 text-center  "><div data-price="3.5" class="p-2 item">Tv</div></div>
+        <div class="col-md-3 text-center  "><div data-price="88" class="p-2 item">Labtop</div></div>
+        <div class="col-md-3 text-center  "><div data-price="12" class="p-2 item">Milk</div></div>
+        <div class="col-md-3 text-center  "><div data-price="11" class="p-2 item">Yagout</div></div>
+        <div class="col-md-3 text-center  "><div data-price="7" class="p-2 item">Pine apple</div></div>
+        <div class="col-md-3 text-center  "><div data-price="3" class="p-2 item">Date</div></div>
+        <div class="col-md-3 text-center  "><div data-price="1" class="p-2 item">Flowers</div></div>
+        <div class="col-md-3 text-center  "><div data-price="2" class="p-2 item">Water</div></div>
+        
+      
+        </div>
+
+
+    </div>
+    <div class="col-md-3">
+        <div id="invoice"></div>
+        <div><span>Total Price</span>
+        <span id="totalprice">00.0</span>
+        </div>
+    </div>
+
+    </div>
+
+
+</div>    
+
+<script>
+// A $( document ).ready() block.
+$( document ).ready(function() {
+
+ function calculateTotal(){
+     let total = 0.0;
+     $(".itemprice").each(function(index,elem){
+        total = total + parseFloat($(this).text());
+     })
+      
+     $("#totalprice").text(total.toFixed(2));
+ }
+ 
+  $(".item").click(function(){
+    $("#invoice").append("<hr>" + $(this).text());
+    $("#invoice").append("<span class='itemprice'>" + $(this).data("price") + "</span>");
+    calculateTotal();
+  });
+
+  $(".item").hover(function(){
+    $(this).css("background-color", "yellow");
+  },function(){
+    $(this).css("background-color", "#ffedee");
+  })
+
+
+});
+
+</script>
+
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+</body>
+</html>

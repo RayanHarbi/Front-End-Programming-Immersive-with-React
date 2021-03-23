@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <style>
+        .item{
+            background-color: #ffedee;
+            margin: 20px;
+            height: 150px;
+            width: 150px;
+            border-radius: 5px;
+            font-size: 1.3em;
+            }
+            #invoice{font-size: 1.3em;}
+    </style>
+<div class="container-fluid bg-light">  
+
+    <div class="row">
+    <div class="col-md-9">
+        <div class="row">
+        <div class="col-md-3 text-center  " >
+            <div class="p-2 item"
+            style="color: #fff;
+            background-size: contain;
+            background-image: url(2.jpg);"
+            >product
+
+        </div></div>
+        <div class="col-md-3 text-center  "><div data-price="1.2" class="p-2 item">Panana</div></div>
+        <div class="col-md-3 text-center  "><div data-price="1.5" class="p-2 item">Orange </div></div>
+        <div class="col-md-3 text-center  "><div data-price="6" class="p-2 item">Cheese</div></div>
+        <div class="col-md-3 text-center  "><div data-price="8" class="p-2 item">Coffie</div></div>
+        <div class="col-md-3 text-center  "><div data-price="18" class="p-2 item">Tea</div></div>
+        <div class="col-md-3 text-center  "><div data-price="80" class="p-2 item">Apple</div></div>
+        <div class="col-md-3 text-center  "><div data-price="7.5" class="p-2 item">Samasung</div></div>
+        <div class="col-md-3 text-center  "><div data-price="3.5" class="p-2 item">Tv</div></div>
+        <div class="col-md-3 text-center  "><div data-price="88" class="p-2 item">Labtop</div></div>
+        <div class="col-md-3 text-center  "><div data-price="12" class="p-2 item">Milk</div></div>
+        <div class="col-md-3 text-center  "><div data-price="11" class="p-2 item">Yagout</div></div>
+        <div class="col-md-3 text-center  "><div data-price="7" class="p-2 item">Pine apple</div></div>
+        <div class="col-md-3 text-center  "><div data-price="3" class="p-2 item">Date</div></div>
+        <div class="col-md-3 text-center  "><div data-price="1" class="p-2 item">Flowers</div></div>
+        <div class="col-md-3 text-center  "><div data-price="2" class="p-2 item">Water</div></div>
+        
+      
+        </div>
+
+
+    </div>
+    <div class="col-md-3">
+        <div id="invoice"></div>
+    </div>
+
+    </div>
+
+
+</div>    
+<div id="div1">
+    box1
+<img id="img1" class="randomimage" src="https://source.unsplash.com/random/200x200?sig=1" >
+<img id="img2" class="randomimage"  src="https://source.unsplash.com/random/200x200?sig=1" >
+<img id="img3" 
+style="width:150px;height:150px"
+class="img-fluid randomimage"  src="1.jpg" >
+
+</div>
+<button id="btn1"> Change image </button>
+<button id="btn2"> Change duck image </button>
+<div class="box">box3</div>
+<script>
+// A $( document ).ready() block.
+$( document ).ready(function() {
+
+$("#btn2").click(function(){
+    $("#img3").prop("src" ,  Math.floor(Math.random() * 7) + ".jpg");
+});
+
+$("#btn1").click(function(){
+    $("#img1").prop("src"
+    ,"https://source.unsplash.com/random/200x200?sig=1&rand=" + Math.random() );
+    $("#img2").prop("src"
+    ,"https://source.unsplash.com/random/200x200?sig=1&rand=" + Math.random() );
+    
+
+});
+
+$("#div1").click(function(){
+console.log("box1");
+});
+$("#div2").click(function(){
+    console.log("box2");
+});
+
+$(".box").click(function(){
+    console.log("box3");
+});
+
+
+  $(".item").click(function(){
+    $("#invoice").append("<hr>" + $(this).text());
+    $("#invoice").append($(this).data("price"));
+  });
+
+  $(".item").hover(function(){
+    $(this).css("background-color", "yellow");
+  },function(){
+    $(this).css("background-color", "#ffedee");
+  })
+
+
+});
+
+</script>
+
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+</body>
+</html>
