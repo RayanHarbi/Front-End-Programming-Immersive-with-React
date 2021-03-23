@@ -1,0 +1,31 @@
+	pwd
+	cd 
+	ls -la 
+	mkdir  directoryName		//create new folder 
+	git init
+	rm -rf foldername	delete folder 
+	get remote -v 	display removet repo info 
+	get branch -a 	display all branches 
+	get add -A 	add all files 
+	git commit  -m "your message "
+	git restore  "file name"
+	git reset  --hard  HEAD //reset current commit 
+	git reset  --hard HEAD^ // reset the last one 
+	git reset --hard HEAD~3  // reset 3 commits 
+	git status	
+	git log 		show commit log 
+	git branch 
+	git merge 
+	get checkout bugFix 
+	git clone https://www...   /c/source/repo
+	git diff		show the changes of our code 
+	// we need to pull the push things 
+	git pull origin master
+	git push origin master
+	git branch bugFix 
+	git branch 		list all branches 
+	git checkout bugFix  //change the branch 
+	git push -u origin bugFix 
+	git merge bugFix 
+	git branch -d bugFix 	delete branch 
+	git push origin --delete bugFix 

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item-left {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  background-color: dodgerblue;
+  padding: 10px;
+  flex: 50%;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+    
+  }
+  .flex-item-right {
+    background-color: hotpink;
+  }
+}
+
+@media (min-width: 1024px) {
+  .flex-container {
+    flex-direction: column;
+    
+  }
+  .flex-item-right {
+    background-color: rgb(105, 255, 113);
+  }
+}
+div > a{
+  width:200px;
+  height: 200px;
+  background-color: lightcoral;
+  display: block;
+  float: left;
+  margin: 20px;
+}
+</style>
+</head>
+<body>
+
+<h1>Responisve Flexbox</h1>
+
+<p>The "flex-direction: row;" stacks the flex items horizontally (from left to right).</p>
+<p>The "flex-direction: column;" stacks the flex items vertically (from top to bottom).</p>
+<p><b>Resize the browser window to see that the direction changes when the 
+screen size is 800px wide or smaller.</b></p>
+<div>
+  <a href="">a</a>
+  <a href="">a</a>
+  <a href="">a</a>
+</div>
+
+
+<div class="flex-container">
+  <div class="flex-item-left">1</div>
+  <div class="flex-item-right">2</div>
+</div>
+
+<div>
+  <a href="">a</a>
+  <a href="">a</a>
+  <a href="">a</a>
+</div>
+
+<div>
+  <a href="">a</a>
+  <a href="">a</a>
+  <a href="">a</a>
+</div>
+
+
+</body>
+</html>
