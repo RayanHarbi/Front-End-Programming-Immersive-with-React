@@ -3,6 +3,13 @@
 
 ## Lectures:
 
+### JQuery:
+* [jQuery introduction](jquery-introduction)
+
+* [jQuery](jQuery-DOM)
+
+### JS:
+
 * [JavaScript Array Iterator Methods](array-iterator-methods-lecture.md)
 
 * [JavaScript Array Iterator Methods Lab](array-iterator-methods.md)
