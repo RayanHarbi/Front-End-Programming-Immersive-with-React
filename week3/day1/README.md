@@ -12,6 +12,10 @@
 
 - [Fetch Lab](lesson1)
 
+- [Dog API example](fetch)
+
+- [HW exercice 2 solution](hw-dom)
+
 ### Homework:
 
 - [Homework AJAX](https://git.generalassemb.ly/FEPIR-LOL-Saudi/homework_week3_day1_ajax)
