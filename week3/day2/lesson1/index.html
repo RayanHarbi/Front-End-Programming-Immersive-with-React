@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <img src="" id="dog">
+<script>
+   let person = {};
+   console.log(person);
+   person.name = "Ali";
+   person.age = 15;
+   person.salary = 2000;
+   person.address = "Riyadh";
+   // another way to define an object 
+   let student = {
+       name : "ahmed",
+       age : 16,
+       salery : 3000,
+       address: "Abha "
+   };
+   console.log(student);
+   //using the object with functions 
+   let pos = {};
+   pos.print = function(){
+       console.log("print from pos");
+   }
+   pos.total = function(){
+       console.log("total 500");
+   };
+
+   pos.invoice = function(){
+       console.log("Invoice number 5222")
+   };
+   console.log(pos);
+   pos.print();
+   pos.invoice ();
+   pos.total();
+
+   // another way of declearing methods 
+   let pos2 = {
+       print(){
+        console.log("print from pos2");
+       }
+       ,
+       total(){
+        console.log("total 600");  
+       }
+       ,
+       name : "POS2",
+   };
+    console.log(pos2);
+    pos2.print();
+    pos2.total();
+    console.log(pos2.name);
+</script> 
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+</body>
+</html>
