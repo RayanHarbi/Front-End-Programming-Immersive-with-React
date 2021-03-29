@@ -6,7 +6,14 @@
 
 ### LAB:
 
-- [Promise Lab](Promises/Lab/lab.js)
+
+- [Promise & fetch Lab](promise)
+
+- [Memes HW solution](hw-fetch)
+
+- [Promise example Lab](Promises/Lab/lab.js)
+
+- [Puzzle lab](lesson1)
 
 ### Extra:
 
