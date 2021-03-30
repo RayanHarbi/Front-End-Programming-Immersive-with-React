@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+  </head>
+  <body>
+    <div class="container">
+ <table class="table" id="studentdata">
+   <tr>
+     <td>Name</td>
+     <td>Age</td>
+     <td>gender</td>
+     <td>Tall</td>
+   </tr>
+ </table>
+
+   <form class="form">
+     Name: <input type="text" id="name">
+     <br><br>
+     Age :  <input type="text" id="age">
+     <br><br>
+     gender :  <input type="text" id="gender">
+     <br><br>
+     Tall :  <input type="text" id="tall">
+     <br><br>
+     <input type="button" value="Save" id="save">
+   </form>
+  </div>   
+    <script>
+
+      firebase.initializeApp({
+        apiKey: "AIzaSyBgXs1fHErCZrPeE9Az-veG_KhivnO8SWc",
+        authDomain: "ga-fepir.firebaseapp.com",
+        projectId: "ga-fepir",
+      });
+      var db = firebase.firestore();
+      function AddStudent(fullName , age , gender , tall ){
+        db.collection("students")
+        .add({
+          Name: fullName,
+          age: age,
+          gender: gender,
+          tall : tall
+        })
+        .then((docRef) => {
+          console.log("Document written with ID: ", docRef.id);
+          readData();
+        })
+        .catch((error) => {
+          console.error("Error adding document: ", error);
+        });
+
+      }
+$("#save").click(function(){
+  AddStudent($("#name").val() , $("#age").val() ,  $("#gender").val() ,$("#tall").val() );
+  
+});
+    
+function readData(){
+    db.collection("students")
+          .get()
+          .then((querySnapshot) => {
+            querySnapshot.forEach((doc) => {
+              console.log(`${doc.id} => ${doc.data()}`);
+              console.log(doc.data())
+              let tamplate = `   <tr>
+                          <td>${doc.data().Name}</td>
+                          <td>${doc.data().age}</td>
+                          <td>${doc.data().gender}</td>
+                          <td>${doc.data().tall}</td>
+                        </tr>` ;
+              $("#studentdata").append(tamplate);
+            });
+          });
+}
+
+$(function() {
+  readData();
+});
+
+
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+  </body>
+</html>

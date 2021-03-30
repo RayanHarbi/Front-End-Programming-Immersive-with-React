@@ -1,7 +1,11 @@
-## Week 3 Day 3: Axios & Fetch GET + POST LAB
+## Week 3 Day 3: Firebase + Axios & Fetch GET + POST LAB
 
 ### LAB:
 
+#### Firebase:
+- [Firebase Lab](firebase)
+
+#### Axios & Fetch:
 - [Dog API random image](LAB/dogs-random-image)
 - [Post GET + POST (fake) with Axios](LAB/posts/axios.html)
 - [Post GET + POST (fake) with Fetch](LAB/posts/fetch.html)

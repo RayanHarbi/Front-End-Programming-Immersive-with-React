@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+   
+  </head>
+  <body>
+    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+    <script>
+      /*const firebase = require("firebase");
+      // Required for side-effects
+      require("firebase/firestore");*/
+      // Initialize Cloud Firestore through Firebase
+      firebase.initializeApp({
+        apiKey: "AIzaSyBgXs1fHErCZrPeE9Az-veG_KhivnO8SWc",
+        authDomain: "ga-fepir.firebaseapp.com",
+        projectId: "ga-fepir",
+      });
+      var db = firebase.firestore();
+      db.collection("users")
+        .add({
+          first: "Ada",
+          last: "Lovelace",
+          born: 1815,
+        })
+        .then((docRef) => {
+          console.log("Document written with ID: ", docRef.id);
+        })
+        .catch((error) => {
+          console.error("Error adding document: ", error);
+        });
+
+      // Add a second document with a generated ID.
+      db.collection("users")
+        .add({
+          first: "عبدالله",
+          middle: "السمري",
+          last: "Turing",
+          born: 1920,
+        })
+        .then((docRef) => {
+          console.log("Document written with ID: ", docRef.id);
+        })
+        .catch((error) => {
+          console.error("Error adding document: ", error);
+        });
+
+      db.collection("users")
+        .get()
+        .then((querySnapshot) => {
+          querySnapshot.forEach((doc) => {
+            console.log(`${doc.id} => ${doc.data()}`);
+            console.log(doc.data().first)
+          });
+        });
+    </script>
+  </body>
+</html>
