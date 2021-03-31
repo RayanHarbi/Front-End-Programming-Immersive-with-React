@@ -14,4 +14,8 @@
 
 - [Public APIs](https://github.com/public-apis/public-apis)
 
+- [Article about firebase firestore CRUD](https://dev.to/retool/crud-with-firestore-using-the-node-js-sdk-anp)
+
+- [Firebase firestore Documentation](https://firebase.google.com/docs/firestore/query-data/get-data)
+
 - [Very cool article about GET + POST](https://github.com/oliverjam/real-world-fetch)
