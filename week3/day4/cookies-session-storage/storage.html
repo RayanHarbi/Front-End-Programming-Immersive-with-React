@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage</title>
+</head>
+<body>
+    <form>
+        full Name : <input type="text" id="fullname"> <br><br>
+        Age : <input type="text" id="age"> <br><br>
+        gender : <input type="text" id="gender"> <br><br>
+        tall : <input type="text" id="tall"> <br><br>
+        <input type="button" id="save" value="save"> <br><br>
+    </form>
+    <div id="userdata"></div>
+    <script>
+     localStorage.setItem("lastname", "Smith");   
+     localStorage.setItem("Age", 19);  
+     localStorage.setItem("gender", "male");  
+     console.log(localStorage.getItem("lastname"));
+     document.querySelector("#save")
+        .addEventListener("click",function(){
+            writeDate("fullname" 
+            ,document.querySelector("#fullname").value);
+
+            writeDate("Age" 
+            ,document.getElementById("age").value);
+
+            writeDate("Gender" 
+            ,document.getElementById("gender").value);
+
+            writeDate("Tall" 
+            ,document.getElementById("tall").value);
+            readData();
+        })
+        function writeDate(inputKey , inputText){
+            localStorage.setItem(inputKey, inputText);
+        }
+        function readData(){
+            document.getElementById("userdata").innerHTML 
+            += localStorage.getItem("fullname") + "<br>";
+
+            document.getElementById("userdata").innerHTML 
+            += localStorage.getItem("Age")+ "<br>";
+
+            document.getElementById("userdata").innerHTML 
+            += localStorage.getItem("Gender")+ "<br>";
+
+            document.getElementById("userdata").innerHTML 
+            += localStorage.getItem("Tall")+ "<br>";           
+        }
+        readData();
+    </script>
+</body>
+</html>

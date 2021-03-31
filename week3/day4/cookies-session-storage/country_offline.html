@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <table class="container table table-strip" id="table1">
+      <tr>
+        <td>No</td>
+        <td>country</td>
+        <td>confirmed</td>
+        <td>recovered</td>
+        <td>deaths</td>
+        <td>population</td>
+      </tr>
+    </table>
+
+    <script>
+      let url = "https://covid-api.mmediagroup.fr/v1/cases";
+      fetch(url)
+        .then(function (response) {
+          if (!response.ok) {
+            console.log("error 1111111111");
+            return;
+          }
+          return response.json();
+        })
+        .then(function (data) {
+          localStorage.setItem("covieddata", JSON.stringify(data));
+          for (let key in data) {
+            let rowData = `<tr>
+                <td>No</td>
+                <td>${data[key].All.country}</td>
+                <td>${data[key].All.confirmed}</td>
+                <td>${data[key].All.recovered}</td>
+                <td>${data[key].All.deaths}</td>
+                <td>${data[key].All.population}</td>
+            </tr>`;
+
+            $("#table1").append(rowData);
+          }
+        })
+        .catch((error) => {
+          console.log("wwwwwww:", error);
+          let data = JSON.parse(localStorage.getItem("covieddata"));
+          for (let key in data) {
+            let rowData = `<tr>
+                <td>No</td>
+                <td>${data[key].All.country}</td>
+                <td>${data[key].All.confirmed}</td>
+                <td>${data[key].All.recovered}</td>
+                <td>${data[key].All.deaths}</td>
+                <td>${data[key].All.population}</td>
+            </tr>`;
+
+            $("#table1").append(rowData);
+          }
+        }); 
+      
+      /*
+      const xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          //convert to javascript object
+          let data = JSON.parse(xhttp.responseText);
+          //console.log(data['Saudi Arabia']);
+          console.log(data);
+          for (let key in data) {
+            let rowData = `<tr>
+                <td>No</td>
+                <td>${data[key].All.country}</td>
+                <td>${data[key].All.confirmed}</td>
+                <td>${data[key].All.recovered}</td>
+                <td>${data[key].All.deaths}</td>
+                <td>${data[key].All.population}</td>
+            </tr>`;
+            console.log(rowData);
+            $("#table1").append(rowData);
+          }
+
+          // Typical action to be performed when the document is ready:
+          //document.getElementById("demo").innerHTML = xhttp.responseText;
+        }
+      };
+      xhttp.open("GET", "https://covid-api.mmediagroup.fr/v1/cases", true);
+      xhttp.send();
+*/
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
