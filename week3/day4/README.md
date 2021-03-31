@@ -6,6 +6,12 @@
 
 - [Cookes & LocalStorage examples lab](cookies-session-storage)
 
+### Extra session LAB:
+
+- [Flexbox LAB](flexbox-grid-lab/flexbox.html)
+
+- [Grid LAB](flexbox-grid-lab/grid.html)
+
 ### Extra Slides:
 
 - [Review Slides](https://git.generalassemb.ly/FEPIR-LOL-Saudi/Front-End-Programming-Immersive-with-React/blob/master/resources/slides)
