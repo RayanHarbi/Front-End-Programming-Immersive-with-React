@@ -1,4 +1,4 @@
-## Week 3 Day 4: Fetch CRUD LAB
+## Week 3 Day 4: Firebase Read & Add data LAB
 
 ### LAB:
 
