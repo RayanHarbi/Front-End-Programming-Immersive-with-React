@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=ali, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="div1">sdfsdlfjldskjfkl</div>
+  <table id="table1">
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+    </tr>
+  </table>
+<a href="www.google.com" id="link1">link</a>
+<div id="tttg">ALi</div>
+<a href="www.google.com" class="link">link1</a>
+<a href="www.google.com" class="link">link2</a>
+<a href="www.google.com" class="link">link3</a>
+<a href="www.google.com" class="link">link4</a>
+<a href="www.google.com" class="link">link5</a>
+<a href="www.google.com" class="link">link6</a>
+<br><br><br>
+<div id="cat"></div>
+<script>
+  let x = 5 +10;
+  let y =44
+  let z = x + y 
+  document.querySelector("#div1").innerHTML = "Ahmed mohamed <br> ali <br> hussen ";
+  
+  fetch("https://cat-fact.herokuapp.com/facts/")
+  .then(response => response.json())
+  .then(data => {
+    console.log(data)
+    data.forEach(element => {
+      console.log(element)
+      document.querySelector("#cat").innerHTML 
+      += element.text + "<br>" + element.updatedAt + "<hr>";
+    });
+  
+  });
+ 
+</script>
+
+</body>
+</html>
