@@ -12,6 +12,8 @@
 
 - [Fruits LAB solution](https://git.generalassemb.ly/FEPIR-LOL-Saudi/filter-fruits-app)
 
+- [TodoList with delete Solution](https://git.generalassemb.ly/FEPIR-LOL-Saudi/homework_week4_day3_todo-list-app)
+
 ### Extra:
 
 - [Video on React Router](https://reactrouter.com/)
