@@ -15,6 +15,8 @@
 
 - [Firebase auth article](https://css-tricks.com/firebase-react-part-2-user-authentication/)
 
+- [Upload image with Firebase video](https://www.youtube.com/watch?v=RLL9FEccW1Y)
+
 - [Auth with Firebase Video](https://www.youtube.com/watch?v=PKwu15ldZ7k)
 
 - [another Firebase auth Video](https://www.youtube.com/watch?v=cFgoSrOui2M)
